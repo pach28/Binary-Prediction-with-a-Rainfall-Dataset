@@ -12,7 +12,7 @@ El desafío principal consistió en construir un modelo de clasificación binari
 
 Este repositorio incluye los siguientes notebooks, que representan las etapas clave de mi análisis y modelado:
 
-1.  **`EDA_y_Modelos_Iniciales.ipynb`**:
+1.  **`EDA_y_Modelos_Iniciales BPRD.ipynb`**:
     * **Análisis Exploratorio de Datos (EDA) Exhaustivo:** Este notebook se centra en la exploración profunda del conjunto de datos. Se analiza la distribución de las variables, se verifica si el origen de los conjuntos de entrenamiento y prueba es consistente, se examinan las correlaciones entre las características y la variable objetivo, y se generan variables dummy para codificar información categórica.
     * **Análisis del Comportamiento de los Días de Lluvia:** Se investiga el comportamiento específico de las variables en los días en que llovió, buscando patrones distintivos.
     * **Transformación de Variables:** Se aplican transformaciones a las variables para mejorar su distribución y linealidad, lo cual puede beneficiar a algunos modelos.
@@ -20,7 +20,7 @@ Este repositorio incluye los siguientes notebooks, que representan las etapas cl
     * **Análisis con DABL (Data Analysis Baseline Library):** Se utiliza la librería DABL para obtener rápidamente modelos de referencia y realizar un análisis automatizado de las variables.
     * **Modelado Inicial con Machine Learning:** Se implementan modelos de clasificación como XGBoost y QDA (Quadratic Discriminant Analysis) para establecer una línea base de rendimiento.
 
-2.  **`Ensemble_Learning_por_Clusters.ipynb`**:
+2.  **`Ensemble_Learning_por_Clusters BPRD.ipynb`**:
     * **Agrupamiento de Variables por Correlación (Clustering):** En este notebook, las variables se agrupan en clusters basados en su correlación. La hipótesis es que las variables dentro de un mismo cluster podrían tener patrones de relación similares con la variable objetivo.
     * **Generación de Modelos Específicos por Cluster:** Para cada cluster de variables correlacionadas, se entrena un modelo de clasificación independiente. El objetivo es que estos modelos especializados capturen mejor las relaciones específicas dentro de cada grupo de variables.
     * **Ensemble Learning con Predicciones de Clusters:** Las predicciones generadas por los modelos de cada cluster se incorporan como nuevas características al conjunto de datos original. Estas predicciones "especializadas" se combinan con las demás variables para entrenar un modelo general final.
